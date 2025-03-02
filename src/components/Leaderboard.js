@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Leaderboard.css"; // Importing the new styles
+import "./Leaderboard.css";
 
 const Leaderboard = () => {
   const players = [
@@ -28,7 +28,7 @@ const Leaderboard = () => {
             <tr key={index}>
               <td>{index + 1}</td>
               <td>
-                <Link to={\`/player/${player.name.toLowerCase().replace(" ", "-")}\`}>
+                <Link to={`/player/${player.name.toLowerCase().replace(/\s/g, "-")}`}>
                   {player.name}
                 </Link>
               </td>
