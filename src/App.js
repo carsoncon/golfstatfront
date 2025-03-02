@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Leaderboard from "./components/Leaderboard/Leaderboard";
-import PlayerProfile from "./components/PlayerProfile/PlayerProfile";
-import Trends from "./components/Trends/Trends";
+import Leaderboard from "./components/Leaderboard";
+import PlayerProfile from "./PlayerProfile";
+import Trends from "./Trends";
 import "./styles.css";
 
 function App() {
